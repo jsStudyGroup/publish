@@ -1,0 +1,6 @@
+@mixin box($width: auto, $height: auto, $display: flex) {
+  width: $width;
+  heihgt: $height;
+  display: $display;
+  @content;
+}
