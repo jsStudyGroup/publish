@@ -1,12 +1,5 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
 module.exports = {
-  configureWebpack: {
-    devtool:
-      process.env.NODE_ENV === "development" ? "inline-source-map" : false
-  },
   css: {
-    extract: true,
     sourceMap: process.env.NODE_ENV === "development"
   },
   chainWebpack: config => {
