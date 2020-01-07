@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div class="box"></div>
+    <div>
+      <span class="icon-not">
+        <span>14.99 $</span>
+      </span>
+    </div>
   </div>
 </template>
 

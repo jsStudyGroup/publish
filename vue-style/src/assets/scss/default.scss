@@ -1,4 +1,7 @@
-@import "./layout/common.scss";
+/*
+  import scss
+*/
+@import "./layout/layout.scss";
 
 /*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
 --------------------------------------------------------------------------------------- */
@@ -103,6 +106,9 @@ nav,
 section {
   display: block;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   line-height: 1;
 }
@@ -124,12 +130,4 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-.box {
-  @include box($width: 200px) {
-    min-width: 100px;
-    min-height: 100px;
-    background-color: red;
-  }
 }

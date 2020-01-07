@@ -1,6 +1,17 @@
-@mixin box($width: auto, $height: auto, $display: flex) {
+@mixin box($width: auto, $height: auto, $display: block) {
   width: $width;
   heihgt: $height;
   display: $display;
   @content;
+}
+
+@mixin boxFlex($display: flex, $justify-content: left, $align-items: top) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  @content;
+}
+
+@mixin bodySize {
+  min-width: $bodyMinSIze;
 }
